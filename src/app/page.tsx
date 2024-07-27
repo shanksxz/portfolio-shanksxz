@@ -10,7 +10,7 @@ export default async function Page() {
   const url = await fetchImg("shanksxz");
 
   return (
-    <section>
+    <section className="px-2 md:px-0">
       <div className="flex flex-col gap-5">
         <Image
           className="rounded-full"
@@ -24,7 +24,7 @@ export default async function Page() {
             <p className="text-xl opacity-70 uppercase">
               Hey There! I&apos;m Somya
             </p>
-            <p className={`${inter.className} text-4xl leading-normal opacity-90`}>
+            <p className={`${inter.className} text-2xl text-justify md:text-4xl leading-normal opacity-90`}>
               Digital craftsman from India, turning <span className='opacity-70'>caffeine</span> into code and ideas into <span className="opacity-70">interfaces</span>. Exploring the ever-evolving web, one <span className="opacity-70">keypress</span> at a time
             </p>
             <Link href={'https://github.com/shanksxz'}>
